@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Heebo:100,300,300i, 400" rel="stylesheet">
+	<title></title>
+<style>
+body, html {
+	font-family:'Heebo', sans-serif;
+}
+.content {
+	height:fit-content;
+}
+.content img {
+	height:10vh;
+	width:auto;
+	display:inline-block;
+	margin:1%;
+	transition:0.25s all ease-in-out;
+	cursor:pointer;
+}
+p {
+	font-size:0.8em;
+	font-weight:300;
+}
+img:hover {
+	transform-origin:50% 50%;
+	transform:scale(1.5);
+}
+h1 {
+	display:inline-block;
+	vertical-align:middle;
+	font-size:2em;
+	font-weight:100;
+	margin-left:2%;
+}
+.identity {
+	display:inline-block;
+	width:10%;
+	vertical-align:middle;
+}
+.cluster {
+	margin:2%;
+}
+</style>
+</head>
+<body>
+
+</body>
+<script>
+d3.csv('results.csv')
+.then(function(data) {
+	console.log(data)
+	showClusters(data);
+})
+.catch(function(error){
+})
+
+
+function showClusters(data){
+	var cluster = []
+	setTimeout(function createClusters() {
+	for (var i = 0; i <= 22; i++) {
+	console.log(i)	
+	cluster[i] = data.filter(function(d){return d.labels==i})
+	getCluster(cluster[i], i)
+	}}, 1500);
+
+
+	function getCluster(cluster, num){
+		target = document.querySelector('body')
+		div = document.createElement('div')
+		div.setAttribute("class","cluster")
+		h1 = document.createElement('h1')
+		h1.innerHTML="Cluster " + num;
+		content = document.createElement('div')
+		content.setAttribute("class","content")
+		for(i=0;i<cluster.length;i++){
+			img = document.createElement('img')
+			console.log("img_small/"+ cluster[i]['s_no']+['_small']+".jpg")
+			img.src="img_small/"+ cluster[i]['s_no']+['_small']+".jpg"
+			content.appendChild(img)
+		}
+		div.appendChild(h1)
+		div.appendChild(content)
+		target.appendChild(div)
+	}
+	
+}
+</script>
+</html>
