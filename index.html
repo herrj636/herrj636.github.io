@@ -60,7 +60,7 @@ d3.csv('results.csv')
 function showClusters(data){
 	var cluster = []
 	setTimeout(function createClusters() {
-	for (var i = 0; i <= 22; i++) {
+	for (var i = 0; i <= 12; i++) {
 	console.log(i)	
 	cluster[i] = data.filter(function(d){return d.labels==i})
 	getCluster(cluster[i], i)
