@@ -1,0 +1,197 @@
+#main {
+  padding: 100%, 80px, 100%, 0px
+}
+
+html, body, #svg {
+  background-color: #130C0E;
+  margin: 0 auto; 
+  width: 100%;
+}
+
+button.aubtn {
+  font-size: 14px;
+  background: #130C0E;
+  color: #2c7bb6;
+  border: none;
+  outline:none;
+  padding: 4px 8px;
+  letter-spacing: 1px;
+  font-family: system-ui;
+}
+button.aubtn:hover {
+  background: #2c7bb6;
+  color: #130C0E;
+  font-family: system-ui;
+}
+
+p{
+  font-family: system-ui;
+  color: #2c7bb6;
+}
+
+button {
+  font-size: 14px;
+  background: #130C0E;
+  color: #2c7bb6;
+  border: none;
+  outline:none;
+  padding: 4px 8px;
+  letter-spacing: 1px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+/*  transform: translate(-50%, -20%);
+  -ms-transform: translate(0%, -50%);*/
+  background-color: white;
+  color: #555;
+  font-size: 10px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.container .btn2 {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+/*  transform: translate(-50%, -20%);
+  -ms-transform: translate(0%, -50%);*/
+  background-color: white;
+  color: #555;
+  font-size: 10px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.container .btn3 {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+/*  transform: translate(-50%, -20%);
+  -ms-transform: translate(0%, -50%);*/
+  background-color: white;
+  color: #555;
+  font-size: 10px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+.container .btn4 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+/*  transform: translate(-50%, -20%);
+  -ms-transform: translate(0%, -50%);*/
+  background-color: white;
+  color: #555;
+  font-size: 10px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+.container .btn5 {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+/*  transform: translate(-50%, -20%);
+  -ms-transform: translate(0%, -50%);*/
+  background-color: white;
+  color: #555;
+  font-size: 10px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.container .btn6 {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+/*  transform: translate(-50%, -20%);
+  -ms-transform: translate(0%, -50%);*/
+  background-color: white;
+  color: #555;
+  font-size: 10px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.container .btn7 {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+/*  transform: translate(-50%, -20%);
+  -ms-transform: translate(0%, -50%);*/
+  background-color: white;
+  color: #555;
+  font-size: 10px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+#map {
+
+  width: 50%;
+  padding-top: 50px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative; 
+
+
+}
+
+#location {
+
+  z-index: 3;
+  position:relative;
+  padding-bottom: 100px;
+  display: inline;
+}
+
+#urbanInd {
+
+  z-index: 5;
+  padding-left: 550px;
+  top: -450px;
+  position: relative;
+  width: 20%;
+
+
+}
+
+#urbanInd3 {
+
+  z-index: 5;
+  padding-left: 800px;
+  width: 20%;
+
+
+}
