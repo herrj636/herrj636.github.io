@@ -12,14 +12,19 @@ body {
 	height: 100vh;
 	margin: 0 auto;
 	padding: 0;
-	display: inline-block;
+	/*display: inline-block;*/
+	/*position: absolute;*/
+	text-align: center;
+}
+
+img {
 
 }
 
 #universeOne {
 	width: 100vw;
 	height: 50vh;
-	/*display: inline-block;*/
+	display: inline-block;
 }
 
 

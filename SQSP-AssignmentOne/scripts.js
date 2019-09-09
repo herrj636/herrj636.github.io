@@ -1,2 +1,4 @@
-console.log("Connected to DOM");
+
+
+var check = console.log("Connected to DOM");
 
