@@ -61,9 +61,8 @@ tspan {
 }
 
 @font-face {
-    font-family: "NeueDisplay";
-    src: 
-    local('NeueDisplay-Random.otf');
+    font-family: "NeueDisplay-Random";
+    src:url('https://herrj636.github.io/MFADT-Report/assets/Neue/NeueDisplay-Random.otf');
 }
 
 body{
