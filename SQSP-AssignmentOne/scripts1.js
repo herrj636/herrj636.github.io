@@ -1,7 +1,7 @@
 //JSON Data
 var universeData = {
 	"array": [{
-		"id": "0001",
+		"id": "0000",
 		"skullSrc": "https://raw.githubusercontent.com/herrj636/herrj636.github.io/master/SQSP-AssignmentOne/assets/skull-1.jpg",
 		"styles": {
 			"font": {
@@ -10,8 +10,8 @@ var universeData = {
 		},
 	},
 	{
-		"id": "0002",
-		"skullSrc": "/Users/juanherrera/Dropbox/herrj636.github.io/SQSP-AssignmentOne/assets/skull-2.svg",
+		"id": "0001",
+		"skullSrc": "https://raw.githubusercontent.com/herrj636/herrj636.github.io/master/SQSP-AssignmentOne/assets/skull-2.svg",
 		"styles": {
 			"font": {
 				"link": "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
@@ -23,32 +23,37 @@ var universeData = {
 // Global Varibles
 var trigger = document.getElementById("trigger");
 
-//Modules
-mainUniverseLoad = () => {
+// Global Modules
+showMainUniverse = () => {
 	let universe = universeData.array[0];	
 	document.getElementById("fonts").setAttribute('href',universe.styles.font.link);
+};
+showMainUniverse();
 
-	hideMainUniverse = () => {
-		document.getElementById("universeOne").style.visibility = "hidden";
-	};
+hideMainUniverse = () => {
+	document.getElementById("universeOne").style.visibility = "hidden";
 };
 
-mainUniverseLoad();
 
+// Local Modules
+universeOne = () => {
+	let universe = universeData.array[1];
+  	let elem = document.getElementById("universeTwo")
+  	elem.style.visibility = "visible"
+  	
+  	let loadImg = document.getElementById("main-img-two");
+  	loadImg.setAttribute("src", "/Users/juanherrera/Dropbox/herrj636.github.io/SQSP-AssignmentOne/assets/skull-2.svg")
+} 
 
+// Trigger
 trigger.addEventListener('click', function (event) {
-  // alert('Element clicked through function!');
 hideMainUniverse();
   UniverseLaunch = () => {
-  	let universe = document.getElementById("universeTwo")
-  	universe.style.visibility = "visible"
-  	console.log(universe.children)
+  	universeOne();
 }
 
 UniverseLaunch();
 });
-
-
 
 
 
