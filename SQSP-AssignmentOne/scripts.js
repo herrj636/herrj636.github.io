@@ -1,2 +1,2 @@
-console.log("Connected to DOM")
+console.log("Connected to DOM");
 
