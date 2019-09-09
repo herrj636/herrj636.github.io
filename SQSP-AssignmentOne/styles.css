@@ -7,6 +7,21 @@ body {
 	background: #000;
 }
 
+button {
+	border-style: solid;
+	border-color: #fff;
+	border-width: 3pt;
+	font-size: 14pt;
+	color: #fff;
+	background: none;
+	padding: 20px;
+}
+
+button:hover{
+	/*border-color: green;*/
+	cursor: pointer;
+}
+
 #mainWrapper {
 	width: 100vw;
 	height: 100vh;
@@ -21,13 +36,13 @@ body {
 	width: 100vw;
 	height: 50vh;
 	display: inline-block;
+	padding: 10vw 0 0 0;
 }
 
 
-#trigger {
-	font-size: 14pt;
-	color: #fff;
-	background: none;
-	padding: 3vw;
-
+#universeTwo {
+	display: inline-block;
+	visibility: hidden;
 }
+
+
