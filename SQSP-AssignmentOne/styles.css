@@ -34,43 +34,56 @@ button:hover{
 #universeOne {
 	width: 100vw;
 	height: 50vh;
-	/*display: inline-block;*/
-	/*padding: 10vw 0 0 0;*/
 	position: absolute;
-
 }
 
 #universeTwo {
 	height: 100%;
-	/*z-index: -1*/
+}
+
+#universeTwo:hover{
+	cursor: pointer;
 }
 
 #button-div{
 	margin-top: 70vh;
 }
 
-
-
 .svg-box-content {
     position: absolute;
     top: 0;
     left: 0;
-    margin: 3% 38% 30% 38%;
+    margin: 4% 38% 30% 38%;
     /*padding: 1vw 10vh 10vh;*/
 }
 
-@media screen and (max-width: 800px) and (min-width: 600px) {
-
-	.svg-box-content {
-    position: absolute;
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+  	.svg-box-content {
+    /*position: absolute;*/
     top: 0;
     left: 0;
-    margin: 3% 18% 0 18%;
-    /*padding: 1vw 10vh 10vh;*/
-  /* enter some CSS */
+    margin: 5% 34% 30% 34%;
+}
 }
 
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  	.svg-box-content {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    margin: 3% 28% 0 28%;
+}
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+  	.svg-box-content {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    margin: 8% 21% 0 21%;
+}
 }
 
 
 
+.cls-1{fill:#c25;}.cls-2{fill:#e62;}.cls-3{fill:#ea0;}.cls-4{fill:#5ab3b5;}.cls-5{fill:#b6b3ad;}.cls-6{fill:#999795;}.cls-7{fill:#6a5e58;}.cls-8{fill:#807d7c;}.cls-9{fill:#39312a;}.cls-10{fill:#010101;} 

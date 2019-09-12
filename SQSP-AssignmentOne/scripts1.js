@@ -53,20 +53,22 @@ universeOne = () => {
 
 universeTwo = () => {
 	// let universe = universeData.array[1];
-  	let elem = document.getElementById("universeTwo")
+  	let elem = document.getElementById("universeTwo");
   	elem.style.visibility = "visible"
   	  	console.log("trigger");
 
 	// var getSkull = document.getElementsByClassName("svg-box-content")
-	var getSkull = document.getElementById("universeTwo")
+	var getSkull = document.getElementById("universeTwo");
 
 	getSkull.addEventListener('click', function (event) {
-		console.log("Skull connected");
+		var ringArray = ['cls-2', 'Layer-3','Layer-4','Layer-5',]
+		// console.log()
+		let ringOne = document.getElementsByClassName(ringArray[0]);
+		console.log(ringOne.item(0));
+		ringOne.item(0).style.fill = "#6a5e58";
 	});
 
 } 
-
-// universeTwo();
 
 
 
