@@ -1,4 +1,4 @@
-//JSON Data
+//JSON Data for each universe.
 var universeData = {
 	"array": [{
 		"id": "0000",
@@ -20,10 +20,21 @@ var universeData = {
 	}]
 }
 
-// Global Varibles
+// Global Varibles //
+//Trigger connected to the button
 var trigger = document.getElementById("trigger");
 
-// Global Modules
+// Trigger function
+trigger.addEventListener('click', function (event) {
+hideMainUniverse();
+UniverseLaunch();
+});
+
+UniverseLaunch = () => {
+  	universeTwo();
+}
+
+// Universe 1 Modules for intitial launch and hiding on-click //
 showMainUniverse = () => {
 	let universe = universeData.array[0];	
 	document.getElementById("fonts").setAttribute('href',universe.styles.font.link);
@@ -31,29 +42,35 @@ showMainUniverse = () => {
 showMainUniverse();
 
 hideMainUniverse = () => {
-	document.getElementById("universeOne").style.visibility = "hidden";
+	// document.getElementById("universeOne").style.visibility = "hidden";
 };
 
 
-// Local Modules
+// Local Modules for each potential universe.
 universeOne = () => {
-	let universe = universeData.array[1];
+	
+};
+
+universeTwo = () => {
+	// let universe = universeData.array[1];
   	let elem = document.getElementById("universeTwo")
   	elem.style.visibility = "visible"
-  	
-  	let loadImg = document.getElementById("main-img-two");
-  	loadImg.setAttribute("src", "/Users/juanherrera/Dropbox/herrj636.github.io/SQSP-AssignmentOne/assets/skull-2.svg")
+  	  	console.log("trigger");
+
+	// var getSkull = document.getElementsByClassName("svg-box-content")
+	var getSkull = document.getElementById("universeTwo")
+
+	getSkull.addEventListener('click', function (event) {
+		console.log("Skull connected");
+	});
+
 } 
 
-// Trigger
-trigger.addEventListener('click', function (event) {
-hideMainUniverse();
-  UniverseLaunch = () => {
-  	universeOne();
-}
+// universeTwo();
 
-UniverseLaunch();
-});
+
+
+
 
 
 

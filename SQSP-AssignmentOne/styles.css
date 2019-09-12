@@ -8,6 +8,7 @@ body {
 }
 
 button {
+	font-weight: bold;
 	border-style: solid;
 	border-color: #fff;
 	border-width: 3pt;
@@ -18,37 +19,58 @@ button {
 }
 
 button:hover{
-	/*border-color: green;*/
 	cursor: pointer;
 }
 
 #mainWrapper {
 	width: 100vw;
 	height: 100vh;
-	margin: 0 auto;
 	padding: 0;
-	/*display: inline-block;*/
-	/*position: absolute;*/
-	text-align: center;
+	  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #universeOne {
 	width: 100vw;
 	height: 50vh;
-	display: inline-block;
-	padding: 10vw 0 0 0;
-}
+	/*display: inline-block;*/
+	/*padding: 10vw 0 0 0;*/
+	position: absolute;
 
+}
 
 #universeTwo {
-	display: inline-block;
-	visibility: hidden;
+	height: 100%;
+	/*z-index: -1*/
 }
 
-#main-img-two{
-	width: auto;
-	height: auto;
+#button-div{
+	margin-top: 70vh;
+}
+
+
+
+.svg-box-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 3% 38% 30% 38%;
+    /*padding: 1vw 10vh 10vh;*/
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+
+	.svg-box-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 3% 18% 0 18%;
+    /*padding: 1vw 10vh 10vh;*/
+  /* enter some CSS */
+}
 
 }
+
 
 
