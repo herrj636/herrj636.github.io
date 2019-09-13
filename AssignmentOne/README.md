@@ -9,9 +9,13 @@ Coming from a design background, one of my strongest skills as a developer is my
 I titled this project **Parallel Universes** because the prompt made me think of all the different ways one same object could be translated into HTML, CSS and Javascript. As next steps for this project I'd like for the button to spit out a different `<div>` with the same skull, but created in different ways.
 
 ## Next Steps:
-- [] **Debug clearInterval so the skull animation doesn't get disrupted if the button is pressed more than one time.**
-- [] **How many different ways could we create this skull?** Would like to continue creating other versions of this skull: One made enterily out of table cells, one that's an interactive video, one made entirely out of text art.
-- [] **Would set put the button so that everytime you click a different version (AKA a universe) of the skull would be loaded.**
+- [ ] **Debug clearInterval**
+so the skull animation doesn't get disrupted if the button is pressed more than one time.
+
+- [ ] **How many different ways could we create this skull?**
+Would like to continue creating other versions of this skull: One made enterily out of table cells `TD`, one that's an interactive video, one made entirely out of text art.
+
+- [ ] **Would set put the button so that everytime you click a different version (AKA a universe) of the skull would be loaded.**
 
 #### Project Website:
 [https://herrj636.github.io/AssignmentOne/index.html](https://herrj636.github.io/AssignmentOne/index.html)
