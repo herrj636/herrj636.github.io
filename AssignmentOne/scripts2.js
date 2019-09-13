@@ -1,24 +1,13 @@
 //Color palettes for the skull interactivity.
-var colorPalettes = [['#c25','#e62','#ea0','#5ab3b5'],['#c25','#e62','#ea0','#5ab3b5']];
+var colorPalettes = [['#c25','#e62','#ea0','#5ab3b5'], ['#FFA646','#F86041','#982062','#343779'], ['#4F62E8','#64B7FF','#63E2EB','#78FFCD'], ['#2C2933','#3D3D47','#606678','#7A8B99'], ['#41A393','#41A393','#01979E','#BD3F59']];
 
 // Global Varibles //
 //Trigger connected to the button
 var trigger = document.getElementById('trigger');
-var testPalette = ['#c25','#e62','#ea0','#5ab3b5'];
-
-
 
 UniverseLaunch = () => {
 	universeTwo();
 }
-
-// Universe 1 Modules for intitial launch and hiding on-click //
-showMainUniverse = () => {
-	// let universe = universeData.array[0];
-	// document.getElementById('fonts').setAttribute('href',universe.styles.font.link);
-};
-
-showMainUniverse();
 
 hideMainUniverse = () => {
 	document.getElementById("universeOne").style.visibility = "hidden";
@@ -32,8 +21,8 @@ trigger.addEventListener('click', function (event) {
 
 universeTwo = () => {
 	let elem = document.getElementById("universeTwo");
+	let randomItem = ['#c25','#e62','#ea0','#5ab3b5'];
 	elem.style.visibility = 'visible';
-	console.log('trigger');
 
 	var getSkull = document.getElementById("universeTwo");
 
@@ -48,38 +37,39 @@ universeTwo = () => {
 		if (counter > 3) {counter = 0};
 		counter++
 		if (counter == 1) {
-			ringOne.item(0).style.fill = testPalette[counter - 1];
-			ringTwo.item(0).style.fill = testPalette[counter];
-			ringThree.item(0).style.fill = testPalette[counter + 1];
-			ringFour.item(0).style.fill = testPalette[counter + 2];
+			ringOne.item(0).style.fill = randomItem[counter - 1];
+			ringTwo.item(0).style.fill = randomItem[counter];
+			ringThree.item(0).style.fill = randomItem[counter + 1];
+			ringFour.item(0).style.fill = randomItem[counter + 2];
 		} else if (counter == 2) {
-			ringOne.item(0).style.fill = testPalette[counter - 1];
-			ringTwo.item(0).style.fill = testPalette[counter];
-			ringThree.item(0).style.fill = testPalette[counter + 1];
-			ringFour.item(0).style.fill = testPalette[counter - 2];
+			ringOne.item(0).style.fill = randomItem[counter - 1];
+			ringTwo.item(0).style.fill = randomItem[counter];
+			ringThree.item(0).style.fill = randomItem[counter + 1];
+			ringFour.item(0).style.fill = randomItem[counter - 2];
 		} else if (counter == 3) {
-			ringOne.item(0).style.fill = testPalette[counter - 1];
-			ringTwo.item(0).style.fill = testPalette[counter];
-			ringThree.item(0).style.fill = testPalette[counter - 3];
-			ringFour.item(0).style.fill = testPalette[counter - 2];
+			ringOne.item(0).style.fill = randomItem[counter - 1];
+			ringTwo.item(0).style.fill = randomItem[counter];
+			ringThree.item(0).style.fill = randomItem[counter - 3];
+			ringFour.item(0).style.fill = randomItem[counter - 2];
 		} else {
-			ringOne.item(0).style.fill = testPalette[counter - 1];
-			ringTwo.item(0).style.fill = testPalette[counter - 4];
-			ringThree.item(0).style.fill = testPalette[counter - 3];
-			ringFour.item(0).style.fill = testPalette[counter - 2];
+			ringOne.item(0).style.fill = randomItem[counter - 1];
+			ringTwo.item(0).style.fill = randomItem[counter - 4];
+			ringThree.item(0).style.fill = randomItem[counter - 3];
+			ringFour.item(0).style.fill = randomItem[counter - 2];
 		}
 
 	}
+	var animation = setInterval(runColorPalette, 500);
+	clearInterval(animation);
+	animation = setInterval(runColorPalette, 500);
 
-	var animate = setInterval(runColorPalette, 500);
-    //This function gets the 
-    getSkull.addEventListener('click', function (event) {
+    //This function gets a random color  
+    var randomPalette = getSkull.addEventListener('click', runColorPalette = (event) => {
     	console.log("skull alive");
     	console.log(colorPalettes.length);
-    	
-
+    	randomItem = colorPalettes[Math.floor(Math.random()*colorPalettes.length)];
+    	console.log(randomItem);
     });
-
 } 
 
 
