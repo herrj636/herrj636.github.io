@@ -1,4 +1,4 @@
-# PRISM 2019
+# Assignment 1 - Juan Herrera
 ### Parsons MFA DT - Thesis Website Repository
 
 ## Core Team:
@@ -17,4 +17,4 @@
 ## Notes:
 
 #### Github ReadMe Document:
-- [formatting syntax](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
+[Project Website](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
