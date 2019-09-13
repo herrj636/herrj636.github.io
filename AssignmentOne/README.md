@@ -20,3 +20,6 @@ Would like to continue creating other versions of this skull: One made enterily 
 
 - [ ] **Would set put the button so that everytime you click a different version (AKA a universe) of the skull would be loaded.**
 
+- [ ] **Create JSON file to store data of multiple universes**
+Would like to create a JSON file in the future to store hidden `div` so that they are loaded only when needed. This to improve scalability and performance.
+
