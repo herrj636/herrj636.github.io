@@ -8,14 +8,14 @@ body {
 }
 
 button {
+	font-family: 'Play'; 
 	font-weight: bold;
 	border-style: solid;
 	border-color: #fff;
-	border-width: 3pt;
-	font-size: 14pt;
-	color: #fff;
-	background: none;
-	padding: 20px;
+	font-size: 18pt;
+	color: #000;
+	background: #fff;
+	padding: 35px;
 }
 
 button:hover{
@@ -26,62 +26,78 @@ button:hover{
 	width: 100vw;
 	height: 100vh;
 	padding: 0;
-	  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #universeOne {
-	width: 100vw;
-	height: 50vh;
 	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 5% 39% 30% 39%;
 }
 
 #universeTwo {
 	height: 100%;
+	visibility: hidden;
 }
 
 #universeTwo:hover{
 	cursor: pointer;
+
 }
 
 #button-div{
-	margin-top: 70vh;
+	margin-top: 65vh;
 }
 
 .svg-box-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 4% 38% 30% 38%;
-    /*padding: 1vw 10vh 10vh;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 5% 39% 30% 39%;
+	/*padding: 1vw 10vh 10vh;*/
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 800px) {
-  	.svg-box-content {
-    /*position: absolute;*/
-    top: 0;
-    left: 0;
-    margin: 5% 34% 30% 34%;
-}
+	.svg-box-content {
+		/*position: absolute;*/
+		top: 0;
+		left: 0;
+		margin: 5% 34% 30% 34%;
+	}
 }
 
 @media only screen and (max-width: 800px) and (min-width: 600px) {
-  	.svg-box-content {
-    /*position: absolute;*/
-    top: 0;
-    left: 0;
-    margin: 3% 28% 0 28%;
-}
+	.svg-box-content {
+		/*position: absolute;*/
+		top: 0;
+		left: 0;
+		margin: 3% 28% 0 28%;
+	}
 }
 
 @media only screen and (max-width: 600px) and (min-width: 300px) {
-  	.svg-box-content {
-    /*position: absolute;*/
-    top: 0;
-    left: 0;
-    margin: 8% 21% 0 21%;
-}
+	button {
+		font-family: 'Play'; 
+		font-weight: bold;
+		font-size: 14pt;
+		color: #000;
+		background: #fff;
+		padding: 15px;
+	}
+
+	.svg-box-content {
+		/*position: absolute;*/
+		top: 0;
+		left: 0;
+		margin: 24% 20% 0 20%;
+	}
+
+	#button-div{
+		margin-top: 70vh;
+	}
 }
 
 

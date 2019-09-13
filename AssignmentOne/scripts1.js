@@ -1,4 +1,4 @@
-//JSON Data for each universe.
+//JSON Data
 var universeData = {
 	"array": [{
 		"id": "0000",
@@ -57,18 +57,69 @@ universeTwo = () => {
   	elem.style.visibility = "visible"
   	  	console.log("trigger");
 
-	// var getSkull = document.getElementsByClassName("svg-box-content")
 	var getSkull = document.getElementById("universeTwo");
 
+    //This function gets the 
 	getSkull.addEventListener('click', function (event) {
-		var ringArray = ['cls-2', 'Layer-3','Layer-4','Layer-5',]
-		// console.log()
-		let ringOne = document.getElementsByClassName(ringArray[0]);
-		console.log(ringOne.item(0));
-		ringOne.item(0).style.fill = "#6a5e58";
+		var ringArray = ['cls-1', 'cls-2','cls-3','cls-4',],
+		    ringOne = document.getElementsByClassName(ringArray[0]),
+		    ringTwo = document.getElementsByClassName(ringArray[1]),
+		    ringThree = document.getElementsByClassName(ringArray[2]),
+		    ringFour = document.getElementsByClassName(ringArray[3]);
+
+		    setInterval(runColorPalette = () => {
+		    	let counter = 0
+
+		    	
+
+
+
+
+
+
+
+
+		    	ringOne.item(0).style.fill = "#6a5e58";
+
+
+		    }, 1000);
+
+		
 	});
 
 } 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
