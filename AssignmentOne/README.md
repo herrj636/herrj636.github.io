@@ -1,6 +1,9 @@
 # Parallel Universes
 ### Assignment 1 - Juan Daniel Herrera
 
+#### Project Website:
+[https://herrj636.github.io/AssignmentOne/index.html](https://herrj636.github.io/AssignmentOne/index.html)
+
 ## Concept:
 Halloween is my favorite holiday of the year, and that's not only because my birthday is in October. So, to get into the spooky holiday season, I chose a skull as the image that I'd like to use for this project. 
 
@@ -17,5 +20,3 @@ Would like to continue creating other versions of this skull: One made enterily 
 
 - [ ] **Would set put the button so that everytime you click a different version (AKA a universe) of the skull would be loaded.**
 
-#### Project Website:
-[https://herrj636.github.io/AssignmentOne/index.html](https://herrj636.github.io/AssignmentOne/index.html)
