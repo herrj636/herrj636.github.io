@@ -15,7 +15,7 @@ button {
 	font-size: 18pt;
 	color: #000;
 	background: #fff;
-	padding: 35px;
+	padding: 20px 35px 20px 35px;
 }
 
 button:hover{
@@ -72,11 +72,11 @@ button:hover{
 		/*position: absolute;*/
 		top: 0;
 		left: 0;
-		margin: 5% 33% 30% 33%;
+		margin: 4% 39% 30% 39%;
 	}
 
 	#universeOne {
-	/*margin: 5% 33% 30% 33%;*/
+	margin: 4% 39% 30% 39%;
 	z-index: -1;
 }
 }

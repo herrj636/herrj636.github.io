@@ -1,5 +1,5 @@
-# Assignment 1 - Juan Herrera
-### Parsons MFA DT - Thesis Website Repository
+# Parallel Universes
+### Assignment 1 - Juan Herrera
 
 ## Core Team:
 - [x] **Juan Daniel Herrera - Creative Director/Project Lead/Lead Developer**
