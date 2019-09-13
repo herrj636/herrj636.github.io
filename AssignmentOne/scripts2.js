@@ -1,5 +1,5 @@
 //Color palettes for the skull interactivity.
-var colorPalettes = [['#c25','#e62','#ea0','#5ab3b5'], ['#FFA646','#F86041','#982062','#343779'], ['#4F62E8','#64B7FF','#63E2EB','#78FFCD'], ['#2C2933','#3D3D47','#606678','#7A8B99'], ['#41A393','#41A393','#01979E','#BD3F59']];
+var colorPalettes = [['#c25','#e62','#ea0','#5ab3b5'], ['#FFA646','#F86041','#982062','#343779'], ['#4F62E8','#64B7FF','#63E2EB','#78FFCD'], ['#2C2933','#3D3D47','#606678','#7A8B99'], ['#41A393','#01979E','#5C315B','#BD3F59']];
 
 // Global Varibles //
 //Trigger connected to the button
