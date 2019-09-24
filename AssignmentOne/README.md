@@ -15,6 +15,12 @@ I titled this project **Parallel Universes** because the prompt made me think of
 - [ ] **Debug clearInterval**
 so the skull animation doesn't get disrupted if the button is pressed more than one time.
 
+- [ ] **Debug responsiveness for mobile and tablet screens, as well as diplays greater than 1400px wide**
+Improve responsiveness for multiple devices at mobile and tablet sizes, as well as large screens and monitors.
+
+- [ ] **Add intructions on how to interact with the animation**
+Ensure the user is taking full advatange of the experience by providing instructions of what they can interact with in the page.
+
 - [ ] **How many different ways could we create this skull?**
 Would like to continue creating other versions of this skull: One made enterily out of table cells `TD`, one that's an interactive video, one made entirely out of text art.
 
