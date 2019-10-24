@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Signature</title>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    #copyButton{
+      font-size: 16px;
+      background: white;
+      color: black;
+      border-color: #3177DD;
+      height: 45px;
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+<div id="signatureContainer">
+<p><br><br><br></p>
+<table style="font-family: Open Sans, arial; height:90px; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="500">
+  <tr>
+    <td style="padding-bottom: 0px" width="105" height="135">
+      <img src="/Users/herrerj2/OneDrive - KET/Access Design/036_062019 Access CMS Ongoing/082019-New Signature Design/_assets/access_a_blue-W150px.png" 
+         alt="Access Logo" 
+         width="94" 
+         height="100" 
+         style="float: left; vertical-align: center">
+    </td>
+    <td style="vertical-align:center; padding:0">
+      <p style=" margin: 0; height: 40px; font-size:14px; font-family: Open Sans, arial; line-height: 18px; color: #7D7D7D">
+        <strong style="font-size:16px; color: #303030; line-height: 18px; height: 1px;">Christine Godbey</strong><br>VP, HR
+      </p>
+      <p style="margin:0; font-family: Open Sans, arial; font-size: 14px;"> 
+        <span style="padding-top: 20px; margin: 0; color: #303030; " vertical-align="bottom;" height="60px"><strong>Direct: </strong>415.844.6223 | <strong>Mobile: </strong>309.825.1859</span><br>
+        <span style="margin: 0; color: #303030; " vertical-align="bottom;" height="60px"><strong>Webex: </strong>https://YourWebexLink</span><br>
+        <a href='https://accesstheagency.com/' style="color: #3177DD; font-weight: bold">accesstheagency.com</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><a href="https://www.instagram.com/accesstheagency/"><img src="/Users/herrerj2/OneDrive - KET/Access Design/036_062019 Access CMS Ongoing/082019-New Signature Design/Social/2x/Instagram@2x.png"
+         alt="Instagram" 
+         width="30" 
+         height="30" 
+         style="display:block; float: left"></a>
+         <a href="https://www.linkedin.com/company/access-brand-communications/"><img src="/Users/herrerj2/OneDrive - KET/Access Design/036_062019 Access CMS Ongoing/082019-New Signature Design/Social/2x/LinkedIn@2x.png"
+         alt="LinkedIn" 
+         width="38" 
+         height="30" 
+         style="display:block; float: left;"></a>
+         <a href="https://twitter.com/AccessTheAgency"><img src="/Users/herrerj2/OneDrive - KET/Access Design/036_062019 Access CMS Ongoing/082019-New Signature Design/Social/2x/Twitter@2x.png"
+         alt="Twitter" 
+         width="38" 
+         height="30" 
+         style="display:block; float: left"></a></td>
+  </tr>
+</table>
+</div>
+<div style="padding-top: 30px">
+  <input id="copyButton" type="button" value="Select and copy signature"
+   onclick="selectElementContents( document.getElementById('signatureContainer') );">
+</div>
+</body>
+<script type="text/javascript">
+  // Documentation on sleecting, copying and pasting to clipboard: https://stackoverflow.com/questions/2044616/select-a-complete-table-with-javascript-to-be-copied-to-clipboard
+
+  function selectElementContents(el) {
+        var body = document.body, range, sel;
+        if (document.createRange && window.getSelection) {
+            range = document.createRange();
+            sel = window.getSelection();
+            sel.removeAllRanges();
+            try {
+                range.selectNodeContents(el);
+                sel.addRange(range);
+            } catch (e) {
+                range.selectNode(el);
+                sel.addRange(range);
+            }
+            document.execCommand("copy");
+
+        } else if (body.createTextRange) {
+            range = body.createTextRange();
+            range.moveToElementText(el);
+            range.select();
+            range.execCommand("Copy");
+        }
+    }
+
+</script>
+</html>
+
