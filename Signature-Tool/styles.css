@@ -1,0 +1,59 @@
+    body{
+      font-family: 'Open Sans', sans-serif;
+      padding: 10px 20px 20px 20px;
+    }
+
+    fieldset{
+     border: none;
+     width: 500px;
+     padding: 10px 0px 10px 0px;
+   }
+
+  form input{
+     width: 350px;
+     height: 25px;
+     border-width: 0px 0px 2px 0px;
+     border-color: #020202;
+     font-size: 9pt;
+   }
+  select{
+     width: 350px;
+     height: 25px;
+/*     border-width: 0px 0px 2px 0px;
+     border-color: #020202;*/
+     font-size: 9pt;
+   }
+
+   #error{
+    color: red;
+    font-size: 11pt;
+    font-weight: 600;
+   }
+
+   #core-sig-container {
+    display: none;
+   }
+
+   #form-submit-button {
+     float: right;
+   }
+
+   .buttonOne {
+    background: #3177dd;
+    border-color: white;
+    font-size: 12pt;
+    color: white;
+    border: none;
+    padding: 10px 12px 10px 12px;
+   }
+
+   .signature-container {
+    padding: 20px 0px 20px 0px;
+   }
+
+
+
+
+
+
+
