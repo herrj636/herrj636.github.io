@@ -59,10 +59,14 @@
 
    #main-sigButton-div{
     overflow: hidden;
+    white-space: normal;
+    width: 200px;
    }
 
    #reply-sigButton-div{
     overflow: hidden;
+    white-space: normal;
+    width: 200px;
    }
 
    #form-submit-button {
@@ -76,6 +80,7 @@
     color: white;
     border: none;
     padding: 10px 12px 10px 12px;
+    white-space: normal;
    }
 
    .signature-container {
