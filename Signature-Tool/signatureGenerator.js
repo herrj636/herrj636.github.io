@@ -51,7 +51,14 @@ createSignature = () => {
 
     document.getElementById("core-sig-container").style.visibility = "visible";
     
-    var partOne = document.getElementById("firstLine").insertAdjacentHTML('afterbegin', '<strong style="font-size:16px; color: #303030; line-height: 18px; height: 1px;">' + name + '</strong>');
+    var partOne = document.getElementById("firstLine");
+    var contactNumbers = document.getElementById("secondLine");
+    
+    partOne.insertAdjacentHTML('afterbegin', '<strong style="font-size:16px; color: #303030; line-height: 18px; height: 1px;">' + name + '</strong>');
+    partOne.insertAdjacentHTML('beforeend', title);
+    contactNumbers.insertAdjacentHTML('afterbegin', '<strong>Direct:</strong> ' + directNum + ' | <strong>Mobile:</strong> ' + mobileNum +'</span>');
+    
+    
     console.log(partOne);
 
 

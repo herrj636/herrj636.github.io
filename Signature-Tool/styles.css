@@ -7,6 +7,7 @@
      border: none;
      width: 500px;
      padding: 10px 0px 10px 0px;
+     overflow: hidden;
    }
 
   form input{
@@ -30,8 +31,38 @@
     font-weight: 600;
    }
 
+   .container {
+    overflow: hidden;
+    margin-bottom: 40px;
+   }
+
    #core-sig-container {
     visibility: hidden;
+   }
+
+    #first-sig-overall {
+    overflow: hidden;
+    margin-bottom: 50px;
+   }
+
+   #main-signature-container{
+    float:left;
+   }
+
+   #second-sig-overall {
+    overflow: hidden;
+   }
+
+   #reply-signature-container{
+    float:left;
+   }
+
+   #main-sigButton-div{
+    overflow: hidden;
+   }
+
+   #reply-sigButton-div{
+    overflow: hidden;
    }
 
    #form-submit-button {
