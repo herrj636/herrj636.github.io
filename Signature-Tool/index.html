@@ -10,6 +10,7 @@
   <div class="container">
     <h3>Access Signature Generator 1.0</h3>
     <h4>Fill out your information and hit submit to generate your email signature.</h4>
+    <p>If you need more information on how to add your signature to Outlook, follow this tutorial: <a href="https://support.office.com/en-us/article/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2">Create and add a signature to messages</a></p>
     <div id="error"></div>
     <form action="" id="userData" name="contact">
       <fieldset>
@@ -47,7 +48,8 @@
           <option value="other">
             other
           </option>
-        </select> <input placeholder="Type your pronoun here" id="color" name="color" style='display:none;' type="text">
+        </select>
+        <input  id="otherPronoun" placeholder="Type your pronoun here" tabindex="8" style='display:none;' type="text">
       </fieldset>
       <fieldset>
         <button id="form-submit-button" class="buttonOne" data-submit="Your signature is below!" id="user-submit" name="submit" type="submit">Submit</button>
@@ -65,11 +67,11 @@
           <tr>
             <td height="135" style="padding-bottom: 0px" width="105"><img alt="Access Logo" height="100" src="https://raw.githubusercontent.com/herrj636/herrj636.github.io/master/Signature-Tool/assets/access_a_blue-W150px.png" style="float: left; vertical-align: center" width="94"></td>
             <td style="vertical-align:center; padding:0">
-              <p id="firstLine" style=" margin: 0; height: 40px; font-size:14px; font-family: Open Sans, arial; line-height: 18px; color: #7D7D7D"><br></p>
-              <p id="secondLine" style="margin:0; font-family: Open Sans, arial; font-size: 14px;"><span style="padding-top: 20px; margin: 0; color: #303030;"><br>
-              <span style="margin: 0; color: #303030;"><strong>Webex:</strong> https://YourWebexLink</span><br>
-              <a href='https://accesstheagency.com/' style="color: #3177DD; font-weight: bold">LinkedIn</a> | <a href='https://accesstheagency.com/' style="color: #3177DD; font-weight: bold">accesstheagency.com</a><br>
-              <span style="margin: 0; color: #808080; font-family: Open Sans, arial">pronouns: she/her/hers</span></span></p>
+              <p id="firstLine" style=" margin: 0; height: 40px; font-size:14px; font-family: Open Sans, arial; line-height: 18px; color: #7D7D7D"></p>
+              <p id="secondLine" style="margin:0; font-family: Open Sans, arial; font-size: 14px;"><span id="numContainer"></span><span style="padding-top: 20px; margin: 0; color: #303030;"><br>
+              <span id="webexLink" style="margin: 0; color: #303030;"><strong>Webex: </strong></span><br>
+              <a id="linkedinLink" href="#" style="color: #3177DD">LinkedIn</a> | <a href='https://accesstheagency.com/' style="color: #3177DD">accesstheagency.com</a><br>
+              <span id="pronounID" style="margin: 0; color: #808080; font-family: Open Sans, arial">pronouns: she/her/hers</span></span></p>
             </td>
           </tr>
           <tr>
@@ -92,7 +94,7 @@
           <tbody>
             <tr>
               <td>
-                <p style=" margin: 0; height: 60px; font-size:14px; font-family: Open Sans, arial; line-height: 18px; color: #303030"><strong style="font-size:16px; line-height: 18px; height: 1px;">Christine Godbey</strong> | direct: 415.844.6223 | mobile: 309.825.1859<br>
+                <p id="ReplyTag" style=" margin: 0; height: 60px; font-size:14px; font-family: Open Sans, arial; line-height: 18px; color: #303030"><strong style="font-size:16px; line-height: 18px; height: 1px;">Christine Godbey</strong> | direct: 415.844.6223 | mobile: 309.825.1859<br>
                 Pronouns: she/her/hers<br>
                 <a href="https://omnicomgroup.webex.com/meet/christineg" style="color: #3177DD;">https://omnicomgroup.webex.com/meet/christineg</a></p>
               </td>
@@ -111,7 +113,7 @@
   <script src="copyScript.js"></script> 
   <script type="text/javascript">
       function CheckPronoun(val){
-       var element=document.getElementById('color');
+       var element=document.getElementById('otherPronoun');
        if(val=='pick a color' || val=='other')
          element.style.display='block';
        else  
