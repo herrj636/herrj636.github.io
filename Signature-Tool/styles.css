@@ -1,6 +1,7 @@
     body{
       font-family: 'Open Sans', sans-serif;
       padding: 10px 20px 20px 20px;
+      height: 110vh;
     }
 
     fieldset{
@@ -11,7 +12,7 @@
    }
 
   form input{
-     width: 350px;
+     width: 400px;
      height: 25px;
      border-width: 0px 0px 2px 0px;
      border-color: #020202;
@@ -33,7 +34,16 @@
 
    .container {
     overflow: hidden;
-    margin-bottom: 40px;
+   }
+
+   #notice{
+    width: 65vw;
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+    background: #45BF55;
+    margin: 10px 0px 25px 0px;
+    color: #fff;
    }
 
    #core-sig-container {

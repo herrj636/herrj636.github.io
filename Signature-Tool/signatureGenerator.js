@@ -1,14 +1,17 @@
-// console.log("I'm here!");
+// Signature Generator developed by Juan Herrera (github: herrj636) for Access Brand Communications. This is a simple module that creates an Outlook-friendly signature.
 
+
+// Global variables to pull form data and pull any errors to the website.
 const data = document.forms['userData'];
 const errorElement = document.getElementById('error');
 
-
+// This simply stops the form from launching a new website.
 data.addEventListener("submit", (e) => {
     e.preventDefault();
     validateForm();
 });
 
+// This function validates that a pronoun option is chosen in the HTML form. If the form is valid, createSignature() is launched to generate the signature. 
 validateForm = () => {
     let messages = [];
     var pronoun = data.querySelector('select[tabindex="7"]').value;
@@ -30,7 +33,7 @@ validateForm = () => {
     }
 }
 
-
+// This is the core function that builds the signature.
 createSignature = () => {
     var name = data.querySelector('input[tabindex="1"]').value;
     var title = data.querySelector('input[tabindex="2"]').value;
@@ -46,6 +49,7 @@ createSignature = () => {
     var contactNumbers = document.getElementById("numContainer");
     var webexLink = document.getElementById("webexLink");
     var linkedinLink = document.getElementById("linkedinLink");
+    var liCont = document.getElementById("linkedinContainer")
     var pronounData = document.getElementById("pronounID");
     var replyTag = document.getElementById("ReplyTag");
     
@@ -58,33 +62,67 @@ createSignature = () => {
 
     webexLink.innerHTML = '';
     webexLink.insertAdjacentHTML('beforeend', '<a href="' + webexURL + '" style="color: #3177DD">' + webexURL + '</a>');
-    linkedinLink.href = linkedinURL;
-    // pronounData.innerText = pronoun;
+
+    replyTag.innerHTML = ''
+    replyTag.insertAdjacentHTML('afterbegin', '<strong style="font-size:16px; line-height: 18px; height: 1px;">' + name + '</strong> | direct: ' + directNum + ' | mobile: ' + mobileNum + '<br><a id="replyWebex" href="' + webexURL + '" style="color: #3177DD;">' + webexURL + '</a>')
+    
+
+    if (linkedinURL.length == 0) {
+        liCont.innerText = ""
+        console.log("No LinkedIn link");
+        console.log(linkedinURL);
+    } else if (linkedinURL.length > 0){
+        liCont.innerText = ""
+        liCont.insertAdjacentHTML('afterbegin', '<a href="' + linkedinURL + '" style="color: #3177DD">LinkedIn</a> | ');
+        console.log("Yes LinkedIn link");
+        console.log(linkedinURL);
+    }
+
+    var replyWebex = document.getElementById("replyWebex")
 
     if (pronoun.value == "none") {
         pronounData.innerText = ""
         console.log(pronoun);
+        pronounData.innerText = '';
     } if (pronoun == "she/her/hers") {
         pronounData.innerText = "Pronoun: " + pronoun;
+        replyWebex.insertAdjacentHTML('beforebegin', 'Pronoun: ' + pronoun + '<br>');
         console.log(pronoun);
     } if (pronoun == "he/him/his") {
         pronounData.innerText = "Pronoun: " + pronoun;
+        replyWebex.insertAdjacentHTML('beforebegin', 'Pronoun: ' + pronoun + '<br>');
         console.log(pronoun);
     } else if (pronoun == "other") {
         pronoun = data.querySelector('input[tabindex="8"]').value;
-        pronounData.innerText = pronoun;
+        pronounData.innerText = 'Pronoun: ' + pronoun;
+        replyWebex.insertAdjacentHTML('beforebegin', 'Pronoun: ' + pronoun + '<br>');
         console.log(pronoun);
     }
 
-    replyTag.innerHTML = ''
-    replyTag.insertAdjacentHTML('afterbegin', '<strong style="font-size:16px; line-height: 18px; height: 1px;">' + name + '</strong> | direct: ' + directNum + ' | mobile: ' + mobileNum + '<br>Pronoun: ' + pronoun + '<br><a href="' + webexURL + '" style="color: #3177DD;">' + webexURL + '</a>')
-    
-    console.log(partOne);
-
-
 }
 
-// <strong style="font-size:16px; line-height: 18px; height: 1px;">Christine Godbey</strong> | direct: 415.844.6223 | mobile: 309.825.1859<br>Pronouns: she/her/hers<br><a href="https://omnicomgroup.webex.com/meet/christineg" style="color: #3177DD;">https://omnicomgroup.webex.com/meet/christineg</a>
+// MIT License
+
+// Copyright (c) 2019 Access Brand Communications
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
 
 
 

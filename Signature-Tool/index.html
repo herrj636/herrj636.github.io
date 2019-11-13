@@ -8,9 +8,8 @@
 </head>
 <body>
   <div class="container">
-    <h3>Access Signature Generator 1.0</h3>
-    <h4>Fill out your information and hit submit to generate your email signature.</h4>
-    <p>If you need more information on how to add your signature to Outlook, follow this tutorial: <a href="https://support.office.com/en-us/article/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2">Create and add a signature to messages</a></p>
+    <h3>Access Signature Generator</h3>
+    <p><strong>Fill out your information and hit submit to generate your email signature.</strong><br>If you need more information on how to add your signature to Outlook, follow this tutorial: <a href="https://support.office.com/en-us/article/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2">Create and add a signature to messages</a></p>
     <div id="error"></div>
     <form action="" id="userData" name="contact">
       <fieldset>
@@ -49,7 +48,7 @@
             other
           </option>
         </select>
-        <input  id="otherPronoun" placeholder="Type your pronoun here" tabindex="8" style='display:none;' type="text">
+        <input  id="otherPronoun" placeholder="Type your pronoun here (Please use '/' between each pronoun)" tabindex="8" style='display:none;' type="text">
       </fieldset>
       <fieldset>
         <button id="form-submit-button" class="buttonOne" data-submit="Your signature is below!" id="user-submit" name="submit" type="submit">Submit</button>
@@ -59,7 +58,7 @@
 
 <!-- BOTH SIGNATURES -->
   <div id="core-sig-container">
-
+    <p id="notice">Your signatures are here below!</p>
     <!-- FIRST SIGNATURE -->
     <div id="first-sig-overall">
       <div id="main-signature-container">
@@ -70,8 +69,8 @@
               <p id="firstLine" style=" margin: 0; height: 40px; font-size:14px; font-family: Open Sans, arial; line-height: 18px; color: #7D7D7D"></p>
               <p id="secondLine" style="margin:0; font-family: Open Sans, arial; font-size: 14px;"><span id="numContainer"></span><span style="padding-top: 20px; margin: 0; color: #303030;"><br>
               <span id="webexLink" style="margin: 0; color: #303030;"><strong>Webex: </strong></span><br>
-              <a id="linkedinLink" href="#" style="color: #3177DD">LinkedIn</a> | <a href='https://accesstheagency.com/' style="color: #3177DD">accesstheagency.com</a><br>
-              <span id="pronounID" style="margin: 0; color: #808080; font-family: Open Sans, arial">pronouns: she/her/hers</span></span></p>
+              <span id="linkedinContainer"></span><a id="accessLink" href='https://accesstheagency.com/' style="color: #3177DD">accesstheagency.com</a><br>
+              <span id="pronounID" style="margin: 0; color: #808080; font-family: Open Sans, arial"></span></span></p>
             </td>
           </tr>
           <tr>
@@ -95,7 +94,6 @@
             <tr>
               <td>
                 <p id="ReplyTag" style=" margin: 0; height: 60px; font-size:14px; font-family: Open Sans, arial; line-height: 18px; color: #303030"><strong style="font-size:16px; line-height: 18px; height: 1px;">Christine Godbey</strong> | direct: 415.844.6223 | mobile: 309.825.1859<br>
-                Pronouns: she/her/hers<br>
                 <a href="https://omnicomgroup.webex.com/meet/christineg" style="color: #3177DD;">https://omnicomgroup.webex.com/meet/christineg</a></p>
               </td>
             </tr>
