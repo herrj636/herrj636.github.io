@@ -58,46 +58,57 @@ createSignature = () => {
     partOne.insertAdjacentHTML('beforeend', title);
 
     contactNumbers.innerHTML = '';
-    contactNumbers.insertAdjacentHTML('afterbegin', '<strong>Direct:</strong> ' + directNum + ' | <strong>Mobile:</strong> ' + mobileNum +'</span>');
 
-    webexLink.innerHTML = '';
-    webexLink.insertAdjacentHTML('beforeend', '<a href="' + webexURL + '" style="color: #3177DD">' + webexURL + '</a>');
-
-    replyTag.innerHTML = ''
-    replyTag.insertAdjacentHTML('afterbegin', '<strong style="font-size:16px; line-height: 18px; height: 1px;">' + name + '</strong> | direct: ' + directNum + ' | mobile: ' + mobileNum + '<br><a id="replyWebex" href="' + webexURL + '" style="color: #3177DD;">' + webexURL + '</a>')
-    
-
-    if (linkedinURL.length == 0) {
-        liCont.innerText = ""
-        console.log("No LinkedIn link");
-        console.log(linkedinURL);
-    } else if (linkedinURL.length > 0){
-        liCont.innerText = ""
-        liCont.insertAdjacentHTML('afterbegin', '<a href="' + linkedinURL + '" style="color: #3177DD">LinkedIn</a> | ');
-        console.log("Yes LinkedIn link");
-        console.log(linkedinURL);
+    formatPhoneNumber = (phoneNumberString) => {
+      var cleaned = ('' + phoneNumberString).replace(/\D/g, '')
+      var match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/)
+      if (match) {
+        return match[1] + '.' + match[2] + '.' + match[3]
     }
+    return null
+}
 
-    var replyWebex = document.getElementById("replyWebex")
 
-    if (pronoun.value == "none") {
-        pronounData.innerText = ""
-        console.log(pronoun);
-        pronounData.innerText = '';
-    } if (pronoun == "she/her/hers") {
-        pronounData.innerText = "Pronoun: " + pronoun;
-        replyWebex.insertAdjacentHTML('beforebegin', 'Pronoun: ' + pronoun + '<br>');
-        console.log(pronoun);
-    } if (pronoun == "he/him/his") {
-        pronounData.innerText = "Pronoun: " + pronoun;
-        replyWebex.insertAdjacentHTML('beforebegin', 'Pronoun: ' + pronoun + '<br>');
-        console.log(pronoun);
-    } else if (pronoun == "other") {
-        pronoun = data.querySelector('input[tabindex="8"]').value;
-        pronounData.innerText = 'Pronoun: ' + pronoun;
-        replyWebex.insertAdjacentHTML('beforebegin', 'Pronoun: ' + pronoun + '<br>');
-        console.log(pronoun);
-    }
+contactNumbers.insertAdjacentHTML('afterbegin', '<strong>Direct:</strong> ' + formatPhoneNumber(directNum) + ' | <strong>Mobile:</strong> ' + formatPhoneNumber(mobileNum) +'</span>');
+
+webexLink.innerHTML = '';
+webexLink.insertAdjacentHTML('beforeend', '<a href="' + webexURL + '" style="color: #3177DD">' + webexURL + '</a>');
+
+replyTag.innerHTML = ''
+replyTag.insertAdjacentHTML('afterbegin', '<strong style="font-size:16px; line-height: 18px; height: 1px;">' + name + '</strong> | direct: ' + formatPhoneNumber(directNum) + ' | mobile: ' + formatPhoneNumber(mobileNum) + '<br><a id="replyWebex" href="' + webexURL + '" style="color: #3177DD;">' + webexURL + '</a>')
+
+
+if (linkedinURL.length == 0) {
+    liCont.innerText = ""
+    console.log("No LinkedIn link");
+    console.log(linkedinURL);
+} else if (linkedinURL.length > 0){
+    liCont.innerText = ""
+    liCont.insertAdjacentHTML('afterbegin', '<a href="' + linkedinURL + '" style="color: #3177DD">LinkedIn</a> | ');
+    console.log("Yes LinkedIn link");
+    console.log(linkedinURL);
+}
+
+var replyWebex = document.getElementById("replyWebex")
+
+if (pronoun.value == "none") {
+    pronounData.innerText = ""
+    console.log(pronoun);
+    pronounData.innerText = '';
+} if (pronoun == "she/her/hers") {
+    pronounData.innerText = "Pronoun: " + pronoun;
+    replyWebex.insertAdjacentHTML('beforebegin', 'Pronoun: ' + pronoun + '<br>');
+    console.log(pronoun);
+} if (pronoun == "he/him/his") {
+    pronounData.innerText = "Pronoun: " + pronoun;
+    replyWebex.insertAdjacentHTML('beforebegin', 'Pronoun: ' + pronoun + '<br>');
+    console.log(pronoun);
+} else if (pronoun == "other") {
+    pronoun = data.querySelector('input[tabindex="8"]').value;
+    pronounData.innerText = 'Pronoun: ' + pronoun;
+    replyWebex.insertAdjacentHTML('beforebegin', 'Pronoun: ' + pronoun + '<br>');
+    console.log(pronoun);
+}
 
 }
 

@@ -8,29 +8,31 @@
 </head>
 <body>
   <div class="container">
+    <img style="width: 250px;" src="https://projects.accesstheagency.com/signature-tool/assets/Access_logo_blue.png">
     <h3>Access Signature Generator</h3>
     <p><strong>Fill out your information and hit submit to generate your email signature.</strong><br>If you need more information on how to add your signature to Outlook, follow this tutorial: <a href="https://support.office.com/en-us/article/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2">Create and add a signature to messages</a></p>
     <div id="error"></div>
     <form action="" id="userData" name="contact">
       <fieldset>
-        <input placeholder="Full name (as you want it to appear in your signature)" required="" tabindex="1" type="text">
+        <label>Name:</label><br><input placeholder="Full name (as you want it to appear in your signature)" required="" tabindex="1" type="text">
       </fieldset>
       <fieldset>
-        <input placeholder="Title" required="" tabindex="2" type="text">
+        <label>Title:</label><br><input placeholder="Title" required="" tabindex="2" type="text">
       </fieldset>
       <fieldset>
-        <input placeholder="Direct Number" required="" tabindex="3" type="tel">
+        <label>Direct Number:</label><br><input placeholder="Direct Number" required="" tabindex="3" type="tel">
       </fieldset>
       <fieldset>
-        <input placeholder="Mobile Number" required="" tabindex="4" type="tel">
+        <label>Mobile Number:</label><br><input placeholder="Mobile Number" required="" tabindex="4" type="tel">
       </fieldset>
       <fieldset>
-        <input placeholder="Webex link (starts with https://)" tabindex="5" type="url">
+        <label>Webex link:</label><br><input placeholder="Webex link (starts with https://)" required="" tabindex="5" type="url">
       </fieldset>
       <fieldset>
-        <input placeholder="Personal LinkedIn (starts with https://)" tabindex="6" type="url">
+        <label>LinkedIn:</label><br><input placeholder="Personal LinkedIn (starts with https://)" tabindex="6" type="url">
       </fieldset>
       <fieldset>
+        <label>Pronoun:</label><br>
         <select name="pronoun" onchange='CheckPronoun(this.value);' required="" tabindex="7">
           <option value="pronoun">
             Pronoun
@@ -64,10 +66,10 @@
       <div id="main-signature-container">
         <table border="0" cellpadding="0" cellspacing="0" id="mainSignature" style="font-family: Open Sans, arial; height:90px; border-collapse: collapse;" width="500">
           <tr>
-            <td height="135" style="padding-bottom: 0px" width="105"><img alt="Access Logo" height="100" src="https://raw.githubusercontent.com/herrj636/herrj636.github.io/master/Signature-Tool/assets/access_a_blue-W150px.png" style="float: left; vertical-align: center" width="94"></td>
+            <td height="135" style="padding-bottom: 0px" width="105"><img alt="Access Logo" height="100" src="https://projects.accesstheagency.com/signature-tool/assets/access_a_blue-W150px.png" style="float: left; vertical-align: center" width="94"></td>
             <td style="vertical-align:center; padding:0">
-              <p id="firstLine" style=" margin: 0; height: 40px; font-size:14px; font-family: Open Sans, arial; line-height: 18px; color: #7D7D7D"></p>
-              <p id="secondLine" style="margin:0; font-family: Open Sans, arial; font-size: 14px;"><span id="numContainer"></span><span style="padding-top: 20px; margin: 0; color: #303030;"><br>
+              <p id="firstLine" style=" margin: 0; height: 40px; font-size:13px; font-family: Open Sans, arial; line-height: 18px; color: #7D7D7D"></p>
+              <p id="secondLine" style="margin:0; font-family: Open Sans, arial; font-size: 13px;"><span id="numContainer"></span><span style="padding-top: 20px; margin: 0; color: #303030;"><br>
               <span id="webexLink" style="margin: 0; color: #303030;"><strong>Webex: </strong></span><br>
               <span id="linkedinContainer"></span><a id="accessLink" href='https://accesstheagency.com/' style="color: #3177DD">accesstheagency.com</a><br>
               <span id="pronounID" style="margin: 0; color: #808080; font-family: Open Sans, arial"></span></span></p>
@@ -76,7 +78,7 @@
           <tr>
             <td></td>
             <td>
-              <a href="https://www.instagram.com/accesstheagency/"><img alt="Instagram" height="30" src="https://raw.githubusercontent.com/herrj636/herrj636.github.io/master/Signature-Tool/assets/instagram.png" style="display:block; float: left" width="30"></a> <a href="https://www.linkedin.com/company/access-brand-communications/"><img alt="LinkedIn" height="30" src="https://raw.githubusercontent.com/herrj636/herrj636.github.io/master/Signature-Tool/assets/linkedin.png" style="display:block; float: left;" width="38"></a> <a href="https://twitter.com/AccessTheAgency"><img alt="Twitter" height="30" src="https://raw.githubusercontent.com/herrj636/herrj636.github.io/master/Signature-Tool/assets/twitter.png" style="display:block; float: left" width="38"></a> <a href="https://accesstheagency.com/blog/"><img alt="Blog" height="30" src="https://raw.githubusercontent.com/herrj636/herrj636.github.io/master/Signature-Tool/assets/blog.png" style="display:block; float: left" width="38"></a>
+              <a href="https://www.instagram.com/accesstheagency/"><img alt="Instagram" height="30" src="https://projects.accesstheagency.com/signature-tool/assets/instagram.png" style="display:block; float: left" width="30"></a> <a href="https://www.linkedin.com/company/access-brand-communications/"><img alt="LinkedIn" height="30" src="https://projects.accesstheagency.com/signature-tool/assets/linkedin.png" style="display:block; float: left;" width="38"></a> <a href="https://twitter.com/AccessTheAgency"><img alt="Twitter" height="30" src="https://projects.accesstheagency.com/signature-tool/assets/twitter.png" style="display:block; float: left" width="38"></a> <a href="https://accesstheagency.com/blog/"><img alt="Blog" height="30" src="https://projects.accesstheagency.com/signature-tool/assets/blog.png" style="display:block; float: left" width="38"></a>
             </td>
           </tr>
         </table>
@@ -93,7 +95,7 @@
           <tbody>
             <tr>
               <td>
-                <p id="ReplyTag" style=" margin: 0; height: 60px; font-size:14px; font-family: Open Sans, arial; line-height: 18px; color: #303030"><strong style="font-size:16px; line-height: 18px; height: 1px;">Christine Godbey</strong> | direct: 415.844.6223 | mobile: 309.825.1859<br>
+                <p id="ReplyTag" style=" margin: 0; height: 60px; font-size:13px; font-family: Open Sans, arial; line-height: 18px; color: #303030"><strong style="font-size:15px; line-height: 18px; height: 1px;">Christine Godbey</strong> | direct: 415.844.6223 | mobile: 309.825.1859<br>
                 <a href="https://omnicomgroup.webex.com/meet/christineg" style="color: #3177DD;">https://omnicomgroup.webex.com/meet/christineg</a></p>
               </td>
             </tr>

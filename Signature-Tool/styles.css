@@ -1,14 +1,24 @@
     body{
       font-family: 'Open Sans', sans-serif;
       padding: 10px 20px 20px 20px;
-      height: 110vh;
+      height: 140vh;
+    }
+
+    h3 {
+      margin-top: 8px;
+      font-size: 18pt;
     }
 
     fieldset{
      border: none;
      width: 500px;
-     padding: 10px 0px 10px 5px;
+     padding: 8px 0px 8px 5px;
      overflow: hidden;
+   }
+
+   label {
+    font-size: 11pt;
+    font-weight: 700;
    }
 
   form input{
@@ -18,6 +28,7 @@
      border-color: #020202;
      font-size: 9pt;
    }
+
   select{
      width: 350px;
      height: 25px;
@@ -92,6 +103,10 @@
     padding: 10px 12px 10px 12px;
     white-space: normal;
    }
+
+   .buttonOne:hover {background-color: #265BAB}
+
+   .buttonOne:active {background-color: #001529}
 
    .signature-container {
     padding: 20px 0px 20px 0px;
