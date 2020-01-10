@@ -74,7 +74,7 @@ createSignature = () => {
     var replyTag = document.getElementById("ReplyTag");
     
     partOne.innerHTML = '';
-    partOne.insertAdjacentHTML('afterbegin', '<strong style="font-size:16px; color: #303030; line-height: 18px; height: 1px;">' + name + '</strong><br>');
+    partOne.insertAdjacentHTML('afterbegin', '<strong style="font-size:15px; color: #303030; line-height: 18px; height: 1px;">' + name + '</strong><br>');
     partOne.insertAdjacentHTML('beforeend', title);
 
     contactNumbers.innerHTML = '';
@@ -86,7 +86,7 @@ createSignature = () => {
     webexLink.insertAdjacentHTML('beforeend', '<a href="' + webexURL + '" style="color: #3177DD">' + webexURL + '</a>');
 
     replyTag.innerHTML = ''
-    replyTag.insertAdjacentHTML('afterbegin', '<strong style="font-size:16px; line-height: 18px; height: 1px;">' + name + '</strong> | direct: ' + formatPhoneNumber(directNum) + ' | mobile: ' + formatPhoneNumber(mobileNum) + '<br><a id="replyWebex" href="' + webexURL + '" style="color: #3177DD;">' + webexURL + '</a>')
+    replyTag.insertAdjacentHTML('afterbegin', '<strong style="font-size:15px; line-height: 18px; height: 1px;">' + name + '</strong> | direct: ' + formatPhoneNumber(directNum) + ' | mobile: ' + formatPhoneNumber(mobileNum) + '<br><a id="replyWebex" href="' + webexURL + '" style="color: #3177DD;">' + webexURL + '</a>')
 
 
     if (linkedinURL.length == 0) {
