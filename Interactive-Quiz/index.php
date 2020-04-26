@@ -3,29 +3,18 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="scripts/formValidate.js"></script>
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-	<meta http-equiv="refresh" content="5">
+	<title>PHP Quiz</title>
 	
-	<script src="scripts/formValidate.js"></script>
-	
-	<title>Access Media Training - Interactive Quiz</title>
-	
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
+
 <body>
-	<div class="wrapper">
 
-		<header>
-			<h1><strong>Access Media Training - Interactive Quiz</strong></h1>
-		</header>
-		<section class="columns">
+	<div id="page-wrap">
 
-			<div class="column">
-<form action="" id="userData" name="contact">
-<h1>Final Quiz for Lip building</h1>
+		<h1>Final Quiz for Lip building</h1>
 		
 		<form action="grade.php" method="post" id="quiz">
 		
@@ -89,12 +78,22 @@
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
-                        <label for="question-3-answers-A">A) True</label>
+                        <label for="question-3-answers-A">A) Secret Enterprise Organizations</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
-                        <label for="question-3-answers-B">B) False</label>
+                        <label for="question-3-answers-B">B) Special Endowment Opportunity</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
+                        <label for="question-3-answers-C">C) Search Engine Optimization</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
+                        <label for="question-3-answers-D">D) Seals End Olives</label>
                     </div>
                 
                 </li>
@@ -105,12 +104,48 @@
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
-                        <label for="question-4-answers-A">A) True</label>
+                        <label for="question-4-answers-A">A) is an HTTP Status Code meaning Page Not Found</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
-                        <label for="question-4-answers-B">B) False</label>
+                        <label for="question-4-answers-B">B) is a good excuse for a clever design</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
+                        <label for="question-4-answers-C">C) should be monitored for in web analytics</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" />
+                        <label for="question-4-answers-D">D) All of the above</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h3>Your favorite website is</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) CSS-Tricks</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) CSS-Tricks</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) CSS-Tricks</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) CSS-Tricks</label>
                     </div>
                 
                 </li>
@@ -120,22 +155,20 @@
             <input type="submit" value="Submit Quiz" />
 		
 		</form>
-    </form>
-			</div>
-		</section>
-		<section>
-
-
-
-</section>
-
-
-		<footer>
-			<h3>Footer</h3>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro. Doloribus vitae non dolores modi dolorum commodi perspiciatis dicta nostrum minus esse, totam officia, quibusdam amet quas tempora? Voluptatibus, esse.</p>
-		</footer>
-
+	
 	</div>
-</body>
-</html>
+	
+<script type="text/javascript">
+    const data = document.forms['quiz'];
+const errorElement = document.getElementById('error');
 
+// This function stops the form from launching a new website.
+data.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log("Hola")
+});
+</script>
+
+</body>
+
+</html>
