@@ -1,13 +1,79 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url("https://use.typekit.net/brg5zcn.css");
+
+/*Halyard Display Italic
+font-family: halyard-display, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Halyard Display Regular
+font-family: halyard-display, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Halyard Display Bold
+font-family: halyard-display, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Halyard Display Bold Italic
+font-family: halyard-display, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Halyard Micro Regular
+font-family: halyard-micro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Halyard Micro Italic
+font-family: halyard-micro, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Halyard Micro Bold Italic
+font-family: halyard-micro, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Halyard Micro Bold
+font-family: halyard-micro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Halyard Text Regular
+font-family: halyard-text, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Halyard Text Italic
+font-family: halyard-text, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Halyard Text Bold
+font-family: halyard-text, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Halyard Text Bold Italic
+font-family: halyard-text, sans-serif;
+font-weight: 700;
+font-style: italic;*/
 
 * { box-sizing: border-box; }
 
 body { 
-  font-family: 'Open Sans', sans-serif;
+  font-family: halyard-display, sans-serif;
   color: #000;
 }
 
 /* STRUCTURE */
+
+p {
+	font-weight: 200;
+	font-size: 13pt;
+}
 
 .wrapper {
 	padding: 5px;
@@ -15,6 +81,7 @@ body {
 	width: 95%;
 	margin: 20px auto;
 }
+
 header {
 	padding: 0 15px;
 }
@@ -28,7 +95,7 @@ header {
 
 .column {
 	flex: 1;
-	border: 1px solid gray;
+	/*border: 1px solid gray;*/
 	margin: 2px;
 	padding: 10px;
 	&:first-child { margin-left: 0; }
@@ -38,6 +105,9 @@ header {
 
 footer {
 	padding: 0 15px;
+	font-family: halyard-display, sans-serif;
+	font-weight: 100;
+	font-style: normal;
 }
 
 

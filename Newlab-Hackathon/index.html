@@ -5,101 +5,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 	
-	<title>Oat Milk Themes Analysis - Aug 2019</title>
+	<title>Newlab Hackathon Project - Territorial Empathy</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
 
 </head>
 <body>
 	<div class="wrapper">
 
 		<header>
-			<h1><strong>Oat Milk Themes Analysis - August 2019</strong></h1>
+			<img src="./assets/TE-logo.gif" style="width: 100px">
+			<h1><strong>The Privilege of Health - A Covid-19 Equity Study by Territorial Empathy</strong></h1>
 		</header>
 		<section class="columns">
 
 			<div class="column">
-				<h3>Read the Quid Global Data <a href="https://i.quid.com/share/jzg0qjPPb4K5EWcfGPLoOmmM81AQeWKq?theme=dark">here</a></h3>
-				<p>Discussions of the dairy labeling debate made up 14 percent of oat milk coverage in August. This was largely driven by the new plant-based/dairy milk hybrid products from Live Real Farm, but oat milk was also frequently mentioned in US-based coverage of a proposal from German legislators that would abolish the country’s VAT reduction on meat in the interest of meeting its greenhouse gas emission reduction goals. These pieces appear to have resonated strongly with consumers – Quid identified a very high level of social media traction for this cluster.</p>
-
-				<p>Additionally, round-up pieces comparing various milk options was identified as a unique trend by Quid’s natural language processing for the first time. These round-ups have included oat milk since it began gaining traction in the US, but they have previously been identified as contributors to other discussion trends. Alt-milk round-ups being broken out as its own cluster could mean that oat milk has been included in more round-ups than in previous months, but based on the weekly coverage analyses, it is more likely that the cluster was identified as its own trend because the language used to discuss oat milk in relation to other milks has grown more consistent across outlets and journalists. </p>
-
-				<p>Other major topics of media discussion were oat milk’s role in healthy eating (17%), in vegan or flexitarian eating (14%), and in seasonal food trends such as summer iced coffees and autumn pumpkin spice lattes (13%). Seasonal food trend pieces mentioning oat milk were particularly prevalent in top-tier consumer outlets, including Real Simple, Refinery29 and PureWow.</p>
-
-				<p>On social media, August was a quiet month for discussions of oat milk. No new noteworthy trends emerged this month – positive sentiment continues to be tied to oat milk’s lower environmental impact and its taste and texture in coffee, while negative sentiment continues to be tied to the additional cost of substituting the product for dairy milk at cafes and its association with hipsters and millennials.</p>
-
-				<p>Social media sentiment was slightly more favorable to oat milk (35.6%) than to almond milk (28.7%), but the US-based social media discussion of almond milk was 78% larger in volume than that of oat milk, and it reached 57% more social media users.</p>
-
-				<p>The related companies most often mentioned in August were Oatly, Starbucks, Whole Foods, Califia Farms, Impossible Foods, Target, Costco, Kroger, Safeway, Live Real Farms, and Pacific Foods. Overall, Quid reported 177 stories covering oat milk in August.
-				</p>
+				<h3>Project Overview</h3>
+				<p>We believe there's a correlation between community behavior and their exposure to the virus. Therefore, we want to analyze the impact of the virus on these communities, and whether they are adhering to the social distancing rules. If not, we want to better understand the factors leading to non-compliance, which may include socio-economic status and race.</p>
+				<h3>Our Solution</h3>
+				<p>To answer these questions, we developed a dashboard able to cross reference multiple data sources and provide us with a detailed snapshot of the spread of the virus by zip code. Additionally, the dashboard allows us to visualize the relationship between the number of Covid-19 cases with the socio-economic status and predominant race of the community within that zip code. Lastly, we also cross reference turnstyle traffic on the subway stations by zip code, to see if there's a relationship between high subway usage and high amount of Covid-19 cases.</p>
 			</div>
-
+		</section>
+		<section>
+			<h1><strong>Dashboard</strong></h1>
+			<p>Explore the dashboard by choosing the category you want to explore from the dropdown.</p>
+			<div class="column">
+				<div class='tableauPlaceholder' id='viz1587920452002' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;Hackathon_15879200958550&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Hackathon_15879200958550&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;Hackathon_15879200958550&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587920452002');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='927px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='927px';} else { vizElement.style.width='100%';vizElement.style.height='777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			</div>
 		</section>
 		<section>
 			<div class="column">
-				<div id='topLocationsCont'>
-					<svg />
-				</div>
+				<h3>Our Process</h3>
+				<p>We began our analysis by connecting the multiple data sources we wanted to use: confirmed cases of Covid-19, median income, race and subway usage by turnstyle traffic. We did this by assigning geolocation information as the common denominator that could weave a thread through these datapoints. We decided to segment our information by Zip code given that this information was readily available in the Covid-19 data and would allow us to achieve a high level of granularity for our research.</p>
+				<h3>Potential Users</h3>
+				<p>This dashboard could potentially be used by government and public health officials as a tool to explore and draw insights from a combination of socio-economic, epidemiological and mobility data. We believe that the insights it provides could be used to inform policy and allocate recources effectively to mitigate the spread of the virus, especially amongst its most vulnerable communities.<br><br>While we think government and health officials would find the greatest benefit from this tool — given the high detail of the data — we also believe that other researchers and the general public would be able to explore this tool and draw meaningful takeaways. We hope that other reseachers will be inspired by our work and use it to dig deeper into the data and find other useful insights. Lastly, we also believe that a general audience would benefit from our research by drawing awareness and building empathy towards the communities being hit the hardest by the virus. If we are able to apply solutions through a position of empathy, we will be able to mitigate the impact of the disease in the most vulnerable communities, and thus be able to defeat the virus much faster as a society in general.</p>
+				<h3>Next Steps</h3>
+				<ul>
+					<li>Connect a real-time data source able to continously add the latest information to our database.</li>
+					<li>Explore the application of machine learning models to find patterns between several data points and create potential predictive or contact tracing models.</li>
+				</ul>
 			</div>
 		</section>
-		<section class="columns">
-			<div class="column"><h2>Most Retweeted</h2></div>
-		</section>
-		<section class="columns">
-			<div class="column">
-				<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Cow&#39;s milk alternatives: <br><br>coconut milk<br>almond milk<br>hazelnut milk<br>hemp milk<br>macadamia milk<br>quinoa milk<br>brazil nut milk<br>chia seed milk<br>cashew milk<br>flax milk<br>oat milk<br>walnut milk<br>pumpkin seed milk<br>sunflower seed milk<br><br>Cow&#39;s milk is for calves (baby cows), not humans.</p>&mdash; Akin Olokun (@AkinOlokun) <a href="https://twitter.com/AkinOlokun/status/1165410881800290305?ref_src=twsrc%5Etfw">August 24, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-			</div>
-
-			<div class="column">
-				<blockquote class="twitter-tweet"><p lang="en" dir="ltr">me: life sux!!!!11!!1<br><br>me after a sip of coffee with oat milk: i could see beauty all around me, in the shape of a cloud or the flap of a single hummingbird wing, i knew that to live was to suffer but i also knew i would not give up this life for the world</p>&mdash; dirt prince (@pant_leg) <a href="https://twitter.com/pant_leg/status/1157715213019426816?ref_src=twsrc%5Etfw">August 3, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-			</div>
-		</section>
-		<section class="columns">
-			<div class="column">
-				<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve had a couple people tell me that they can&#39;t drink plant milks as they have a nut allergy. There are plenty of plant milks that aren&#39;t nut based! Such as:<br><br>- Oat milk (the best)<br>- Soy milk<br>- Coconut milk (not a nut)<br>- Hemp milk<br>- Pea milk</p>&mdash; will Ⓥ (@veganwilliam) <a href="https://twitter.com/veganwilliam/status/1160139572975738880?ref_src=twsrc%5Etfw">August 10, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
-			</div>
-			<div class="column">
-				<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just found this snickerdoodle oat milk creamer at Target 🍁🍂😍 <a href="https://t.co/ok1zUp4vod">pic.twitter.com/ok1zUp4vod</a></p>&mdash; Ⓥanilla bean (@veganpoIice) <a href="https://twitter.com/veganpoIice/status/1161421373295566849?ref_src=twsrc%5Etfw">August 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-			</div>
-		</section>
-
-		<section class="columns">
-			<div class="column">
-				<blockquote class="twitter-tweet"><p lang="en" dir="ltr">veganism is just a series of easy rational everyday choices.<br><br>simply choose the falafel wrap over the chicken sandwich..&amp; the oat milk over the cows milk etc etc<br><br>...it’s easy 🌱</p>&mdash; Gaz Oakley (@avantgardevegan) <a href="https://twitter.com/avantgardevegan/status/1156889475613638656?ref_src=twsrc%5Etfw">August 1, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-			</div>
-			<div class="column">
-				<blockquote class="twitter-tweet"><p lang="en" dir="ltr">almond milk walked so oat milk could run</p>&mdash; 𝔉 𝔦 𝔬 𝔫 𝔞 (@COOLCHICBLONDE) <a href="https://twitter.com/COOLCHICBLONDE/status/1166830968050724865?ref_src=twsrc%5Etfw">August 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
-			</div>
-		</section>
-		<section class="columns">
-			<div class="column"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today is <a href="https://twitter.com/hashtag/WorldPlantMilkDay?src=hash&amp;ref_src=twsrc%5Etfw">#WorldPlantMilkDay</a>. Oat milk! Soya milk! Rice milk! Almond milk! Coconut milk! Hemp milk! Cashew milk! Frickin&#39; pea milk! Whichever you choose, please consider the impact of your choice 🙏💚 <a href="https://t.co/GLolciZB8J">pic.twitter.com/GLolciZB8J</a></p>&mdash; Sam W Ⓥ (@saminalrights) <a href="https://twitter.com/saminalrights/status/1164468074000584704?ref_src=twsrc%5Etfw">August 22, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
-			<div class="column">
-				<blockquote class="twitter-tweet"><p lang="en" dir="ltr">me: “twitter is toxic and actively ruining my brain I should step away from it”<br>me five minutes later on twitter: “oat milk is doing what you WEAK fucks won’t do....”</p>&mdash; JuanPa (@jpbrammer) <a href="https://twitter.com/jpbrammer/status/1163889707614384129?ref_src=twsrc%5Etfw">August 20, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-			</div>
-		</section>
-
-		<section class="columns">
-			<div class="column"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">omg oat milk is so good... I had no idea oats could be milked. where is the oat teet!?</p>&mdash; Kory DeSoto (@Korsoto) <a href="https://twitter.com/Korsoto/status/1167137919435456513?ref_src=twsrc%5Etfw">August 29, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-			<div class="column">
-				<blockquote class="twitter-tweet"><p lang="en" dir="ltr">tomorrow is early pilâtes, followed by my daily juice bar + shopping at the farmers market and engrossing myself with novels at a local bookshop, with an oat milk latte to keep me company.</p>&mdash; 𝐍. (@FRANCVIVANT) <a href="https://twitter.com/FRANCVIVANT/status/1162933737954390017?ref_src=twsrc%5Etfw">August 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-		</section>
-
-		<section class="columns">
-			<div class="column"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">drop ur favorite starbucks drinks, mine:<br>- iced caramel macchiato with coconut milk (oat milk if they have it)<br>- matcha frappuccino with coconut milk<br>- matcha latte with coconut milk<br>- mango dragonfruit refresher with lemonade <br>- iced guava white tea lemonade</p>&mdash; UR FAV NAIL TECH (@kayagbayani) <a href="https://twitter.com/kayagbayani/status/1159541764694454274?ref_src=twsrc%5Etfw">August 8, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
-			<div class="column">
-				<blockquote class="twitter-tweet"><p lang="en" dir="ltr">For those that are highly sensitive (hsp), creatives and empaths, who need medicine to help process this initiation that’s happening now—drinking organic herbal tea (preferably homemade) of Chamomile, Catnip, Oatstraw, Lemon Balm, Rose and Licorice Root with oat milk and honey.</p>&mdash; Réy 🕊 (@blksoltheory) <a href="https://twitter.com/blksoltheory/status/1158520536726683648?ref_src=twsrc%5Etfw">August 5, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-			</div>
-		</section>
-
 		<footer>
-			<h3>Footer</h3>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro. Doloribus vitae non dolores modi dolorum commodi perspiciatis dicta nostrum minus esse, totam officia, quibusdam amet quas tempora? Voluptatibus, esse.</p>
+			&#169; 2020 All Rights Reserved Territorial Empathy
 		</footer>
 
 	</div>
 </body>
-	<script src="scripts/TopLocations.js"></script>
+	<!-- <script src="scripts/TopLocations.js"></script> -->
 </html>
 
